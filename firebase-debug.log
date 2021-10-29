@@ -1,0 +1,41 @@
+[debug] [2021-10-29T14:10:44.538Z] ----------------------------------------------------------------------
+[debug] [2021-10-29T14:10:44.543Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-10-29T14:10:44.544Z] CLI Version:   9.21.0
+[debug] [2021-10-29T14:10:44.544Z] Platform:      win32
+[debug] [2021-10-29T14:10:44.544Z] Node Version:  v16.13.0
+[debug] [2021-10-29T14:10:44.546Z] Time:          Fri Oct 29 2021 15:10:44 GMT+0100 (West Africa Standard Time)
+[debug] [2021-10-29T14:10:44.547Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-29T14:10:44.563Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-29T14:10:44.563Z] > authorizing via signed-in user (gkotoye@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\GBEMI\Documents\GitHub\netflix-clone
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-10-29T14:11:03.904Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-10-29T14:11:33.914Z] Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects?pageSize=100
+[debug] [2021-10-29T14:11:44.435Z] FirebaseError: Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects?pageSize=100
+    at Client.doRequest (C:\Program Files\nodejs\node_modules\firebase-tools\lib\apiv2.js:211:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Client.request (C:\Program Files\nodejs\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async getProjectPage (C:\Program Files\nodejs\node_modules\firebase-tools\lib\management\projects.js:233:17)
+    at async getFirebaseProjectPage (C:\Program Files\nodejs\node_modules\firebase-tools\lib\management\projects.js:250:23)
+    at async selectProjectInteractively (C:\Program Files\nodejs\node_modules\firebase-tools\lib\management\projects.js:95:41)
+    at async Object.doSetup [as project] (C:\Program Files\nodejs\node_modules\firebase-tools\lib\init\features\project.js:87:27)
+    at async init (C:\Program Files\nodejs\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
